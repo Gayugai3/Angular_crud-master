@@ -1,0 +1,28 @@
+
+
+.content{
+    padding-top: 10px;
+}
+
+
+.row{
+    display:  flex;
+    gap: 10px
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+
+button{
+
+    float:right;
+ }
+ 
+
+.maxWidth{
+    padding-top: 25px;
+    margin: 0 auto;
+    max-width: 1248px;
+}

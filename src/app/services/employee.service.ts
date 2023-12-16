@@ -9,24 +9,36 @@ export class EmployeeService {
   constructor(private _http: HttpClient) {}
 
   addEmployee(data: any): Observable<any> {
-    return this._http.post('http://localhost:3000/employee', data);
+    return this._http.post(
+      'https://6394ae6686829c49e8243706.mockapi.io/employee',
+      data
+    );
   }
 
   updateEmployee(id: number, data: any): Observable<any> {
-    return this._http.put(`http://localhost:3000/employee/${id}`, data);
+    return this._http.put(
+      `https://6394ae6686829c49e8243706.mockapi.io/employee/${id}`,
+      data
+    );
   }
-  
+
   getCurrentEmployee(id: number): Observable<any> {
     {
-      return this._http.get(`http://localhost:3000/employee/${id}`);
+      return this._http.get(
+        `https://6394ae6686829c49e8243706.mockapi.io/employee/${id}`
+      );
     }
   }
 
   getEmployeeList(): Observable<any> {
-    return this._http.get('http://localhost:3000/employee');
+    return this._http.get(
+      'https://6394ae6686829c49e8243706.mockapi.io/employee'
+    );
   }
 
   deleteEmployee(id: number): Observable<any> {
-    return this._http.delete(`http://localhost:3000/employee/${id}`);
+    return this._http.delete(
+      `https://6394ae6686829c49e8243706.mockapi.io/employee/${id}`
+    );
   }
 }
